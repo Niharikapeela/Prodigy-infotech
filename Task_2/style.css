@@ -1,0 +1,132 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #111334;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Main Container */
+  .main-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Title */
+  .title-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Timer Container */
+  .timer-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .timer-Display {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #2c3e50;
+    letter-spacing: 2px;
+  }
+  
+  /* Laps List */
+  .laps {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .laps li {
+    font-size: 1rem;
+    color: #34495e;
+    border-bottom: 1px solid #eaeaea;
+    padding: 5px 0;
+  }
+  
+  /* Buttons Container */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .title-container h1 {
+      font-size: 2rem;
+    }
+  
+    .timer-Display {
+      font-size: 2.5rem;
+    }
+  
+    .buttons-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    button {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-container {
+      padding: 20px;
+    }
+  
+    .title-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .timer-Display {
+      font-size: 2rem;
+    }
+  
+    button {
+      max-width: 150px;
+      font-size: 0.9rem;
+    }
+  }
+  

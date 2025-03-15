@@ -1,0 +1,117 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    padding: 20px;  /* Added padding to give more breathing space */
+  }
+  
+  .weather-container {
+    background: #fff;
+    padding: 40px;  /* Increased padding for a more spacious feel */
+    border-radius: 20px;  /* Increased border radius for a smoother look */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);  /* Increased box shadow for more depth */
+    text-align: center;
+    width: 450px;  /* Increased width for a larger box */
+  }
+  
+  h1 {
+    font-size: 32px;  /* Increased font size for the heading */
+    color: #333;
+    margin-bottom: 30px;  /* Increased margin bottom for better spacing */
+  }
+  
+  .search-box {
+    display: block;
+    justify-content: center;
+    margin-bottom: 20px;  /* Increased margin to give more space between elements */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;  /* Increased padding for the input field */
+    border-radius: 25px;  /* Rounded the corners more */
+    border: 2px solid #74ebd5;
+    outline: none;
+    font-size: 18px;  /* Increased font size for better readability */
+  }
+  button {
+    display: block; /* Ensure button takes up its own line */
+    width: 100%;
+    padding: 12px 18px;  /* Increased padding for buttons */
+    border: none;
+    border-radius: 25px;  /* Rounded corners for buttons */
+    background-color: #74ebd5;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;  /* Increased font size for buttons */
+    transition: background-color 0.3s;
+    margin-top: 15px;  /* Increased margin for better spacing */
+  }
+  
+  button:hover {
+    background-color: #57c1c3;
+  }
+  
+  .weather-info {
+    margin-top: 30px;  /* Increased margin for weather information section */
+  }
+  
+  .weather-info h2 {
+    font-size: 26px;  /* Increased font size for the weather info heading */
+    color: #333;
+    margin-bottom: 15px;  /* Increased margin for better spacing */
+  }
+  
+  .weather-info p {
+    font-size: 20px;  /* Increased font size for paragraph text */
+    margin: 8px 0;  /* Increased margin between paragraphs */
+    color: #666;
+  }
+  
+  button:last-of-type {
+    background-color: #acb6e5;
+    border-radius: 25px;  /* Rounded the corners more */
+    margin-top: 25px;  /* Increased margin */
+  }
+  
+  button:last-of-type:hover {
+    background-color: #8fa9d2;
+  }
+  
+  @media (max-width: 480px) {
+    .weather-container {
+      width: 90%;  /* Ensures the box is still responsive on small screens */
+    }
+  
+    h1 {
+      font-size: 28px;  /* Adjusted font size for small screens */
+    }
+  
+    input[type="text"] {
+      font-size: 16px;  /* Adjusted font size for small screens */
+    }
+  
+    button {
+      font-size: 16px;  /* Adjusted font size for small screens */
+    }
+  
+    .weather-info h2 {
+      font-size: 22px;  /* Adjusted font size for small screens */
+    }
+  
+    .weather-info p {
+      font-size: 18px;  /* Adjusted font size for small screens */
+    }
+  }
+  
